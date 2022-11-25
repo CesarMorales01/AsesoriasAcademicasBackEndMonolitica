@@ -3,6 +3,7 @@ const ClienteModel = require('../models/Clientes');
 
 const crearCliente = async (req = request, res = response) => {
     try{
+        console.log("host", process.env.PORT)
         const nombre=req.body.name
         const email=req.body.email
         const query = { email: email}; 
